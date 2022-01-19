@@ -46,30 +46,53 @@
     }
     
     /* CIRCLE */
-    .big-circle{
+    .box{
+        position: relative;
         width: 140px;
         height: 140px;
-        border: 4px solid #8df7c1;
-        border-radius: 50%;
-    }
-    .circle-container{          
-        display: flex;
-        justify-content: center;
-        position: relative;
-        padding: 15px 0;
+        margin: 0 auto;
         
     }
-    .small-circle{
-        width: 24px;
+    .big-circle,.img-box,.sm-circle{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
         border-radius: 50%;
-        background-color: #ff0036;
-        position: absolute; 
-        font-size: 7px;
-        color: #fff;
+        background-color: #ccc;
+    }
+    .big{
+        border: 70px solid #8df7c1;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    .img-box{
+        left:4px;
+        right: 4px;
+        top:4px;
+        bottom:4px;
+        overflow: hidden;
+    }
+    .img-box img{
+        transform: scale(2);
+    }
+    .sm-circle{
+        left: auto;
+        top: auto;
+        right: 9px;
+        bottom: 9px;
+        width: 24px;
+        height: 24px;
+        border: 2px solid rgba(255,5,58,0.2);
+        background-color: #ff053a;
+        background-clip: padding-box;
+        font-family: 'Noto Sans KR';
+        font-weight: 300;
+        font-size:7px;
+        color:#fff;
         text-align: center;
-        line-height: 24px;
-        right: 120px;
-        bottom: 16px;
+        line-height: 21px;
     }
     /* TEXT */
     .text{
@@ -167,14 +190,15 @@
         </header>
 
         <section class="main">
-            <div class="circle-container">
-                <div class="big-circle">
-                    <img src="./images/photo-main.png" alt="메인이미지">
+            <div class="box">
+                <div class="big-circle big"></div>
+                <div class="img-box">
+                    <img src="./images/photo1.jpg" alt="이미지">
                 </div>
-                <div class="small-circle">
-                    <p>50%<p>
-                </div>
+                <div class="sm-circle">50%</div>
             </div>
+
+
             <sectio class="text">
                 <div class="my">
                     <p>Complate</p>
