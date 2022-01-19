@@ -4,175 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Profile</title>
     
-<style>
-    .wrap{
-        width: 360px;
-        height: 650px;
-    }
-    /* HEADER */
-    .header{
-        height: 49px;    
-        color: #676767;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        line-height: 48px;
-        border-bottom: 1px solid #eeeeee;
-        margin-bottom: 25px;
-    }
-    .icon01,.icon02{
-        align-items: flex-end;
-        padding: 0 16px;
-    }
-    .icon01 a:first-child{
-        margin-right:16px ;
-    }
-    .icon02 a:first-child{
-        margin-right:16px ;
-    }
-    .header h1{
-        font-size: 24px;
-        font-family: 'Noto Sans KR';
-        font-weight: bold;
-        color: #676767;
-    }
-    
-    /* CIRCLE */
-    .box{
-        position: relative;
-        width: 140px;
-        height: 140px;
-        margin: 0 auto;
+    <style>
+        .wrap{
+            width: 360px;
+            height: 650px;
+        }
+        /* HEADER */
+        .header{
+            height: 49px;    
+            color: #676767;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            line-height: 48px;
+            border-bottom: 1px solid #eeeeee;
+            margin-bottom: 25px;
+        }
+        .icon01,.icon02{
+            align-items: flex-end;
+            padding: 0 16px;
+        }
+        .icon01 a:first-child{
+            margin-right:16px ;
+        }
+        .icon02 a:first-child{
+            margin-right:16px ;
+        }
+        .header h1{
+            font-size: 24px;
+            font-family: 'Noto Sans KR';
+            font-weight: bold;
+            color: #676767;
+        }
         
-    }
-    .big-circle,.img-box,.sm-circle{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border-radius: 50%;
-        background-color: #ccc;
-    }
-    .big{
-        border: 70px solid #8df7c1;
-        border-left-color: transparent;
-        border-bottom-color: transparent;
-    }
-    .img-box{
-        left:4px;
-        right: 4px;
-        top:4px;
-        bottom:4px;
-        overflow: hidden;
-    }
-    .img-box img{
-        transform: scale(2);
-    }
-    .sm-circle{
-        left: auto;
-        top: auto;
-        right: 9px;
-        bottom: 9px;
-        width: 24px;
-        height: 24px;
-        border: 2px solid rgba(255,5,58,0.2);
-        background-color: #ff053a;
-        background-clip: padding-box;
-        font-family: 'Noto Sans KR';
-        font-weight: 300;
-        font-size:7px;
-        color:#fff;
-        text-align: center;
-        line-height: 21px;
-    }
-    /* TEXT */
-    .text{
-        text-align:center;
-    }
-    .my p:first-child{
-        font-size: 18px;
-        color: #cccccc;
-        margin-bottom: 28px;
-    }
-    .my p:nth-child(2){
-        font-size: 24px;
-        color: #676767;
-        margin-bottom: 10px;
-    }
-    .my p:last-child{
-        font-size: 18px;
-        color: #888888;
-        margin-bottom: 30px;
-    }
-    /* FOLLOW */
-    .follow{
-        display: flex;
-        justify-content:space-between;
-        position: relative;
-        text-align: center;
-        font-size: 14px;
-        margin: 0 54px;
-        margin-bottom: 30px;   
-    }
-    .follow p:nth-child(2)::before, .follow p:nth-child(2)::after{
-        content: '';
-        display: block;
-        clear: both;
-        position: absolute;
-        background-color: #cccccc;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .follow p:nth-child(2)::before{
-        width: 2px;
-        height: 14px;
-        left: 30%;
-    }
-    .follow p:nth-child(2)::after{
-        width: 2px;
-        height: 14px;
-        right: 30%;
-    }
+        /* CIRCLE */
+        .box{
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+            
+        }
+        .big-circle,.img-box,.sm-circle{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+        .big{
+            border: 70px solid #8df7c1;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+        }
+        .img-box{
+            left:4px;
+            right: 4px;
+            top:4px;
+            bottom:4px;
+            overflow: hidden;
+        }
+        .img-box img{
+            transform: scale(2);
+        }
+        .sm-circle{
+            left: auto;
+            top: auto;
+            right: 9px;
+            bottom: 9px;
+            width: 24px;
+            height: 24px;
+            border: 2px solid rgba(255,5,58,0.2);
+            background-color: #ff053a;
+            background-clip: padding-box;
+            font-family: 'Noto Sans KR';
+            font-weight: 300;
+            font-size:7px;
+            color:#fff;
+            text-align: center;
+            line-height: 21px;
+        }
+        /* TEXT */
+        .text{
+            text-align:center;
+        }
+        .my p:first-child{
+            font-size: 18px;
+            color: #cccccc;
+            margin-bottom: 28px;
+        }
+        .my p:nth-child(2){
+            font-size: 24px;
+            color: #676767;
+            margin-bottom: 10px;
+        }
+        .my p:last-child{
+            font-size: 18px;
+            color: #888888;
+            margin-bottom: 30px;
+        }
+        /* FOLLOW */
+        .follow{
+            display: flex;
+            justify-content:space-between;
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+            margin: 0 54px;
+            margin-bottom: 30px;   
+        }
+        .follow p:nth-child(2)::before, .follow p:nth-child(2)::after{
+            content: '';
+            display: block;
+            clear: both;
+            position: absolute;
+            background-color: #cccccc;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .follow p:nth-child(2)::before{
+            width: 2px;
+            height: 14px;
+            left: 30%;
+        }
+        .follow p:nth-child(2)::after{
+            width: 2px;
+            height: 14px;
+            right: 30%;
+        }
 
-    /* PHOTOS */
-    .photos{
-        height: 180px;
-    }
-    .photos img{
-        width: 87px;
-        height: 87px;
-        margin-right: 3px;
-        margin-bottom: 3px;
-        float:left;
-    }
+        /* PHOTOS */
+        .photos{
+            height: 180px;
+        }
+        .photos img{
+            width: 87px;
+            height: 87px;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            float:left;
+        }
 
-    /* FOOTER */
-    .footer{
-        height: 44px;
-        background-color: #f0f0f0;
-    }
-    .footer .icons{
-        color: #cccccc;
-        font-size: 14px;
-        margin-left: 42px;
-        margin-right: 42px;
-        text-align: center;
-        line-height: 44px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-</style>
+        /* FOOTER */
+        .footer{
+            height: 44px;
+            background-color: #f0f0f0;
+        }
+        .footer .icons{
+            color: #cccccc;
+            font-size: 14px;
+            margin-left: 42px;
+            margin-right: 42px;
+            text-align: center;
+            line-height: 44px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    </style>
 
 </head>
 
