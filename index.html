@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Profile</title>
+    
+<style>
+    .wrap{
+        width: 360px;
+        height: 650px;
+    }
+    /* HEADER */
+    .header{
+        height: 49px;    
+        color: #676767;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        line-height: 48px;
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 25px;
+    }
+    .icon01,.icon02{
+        align-items: flex-end;
+        padding: 0 16px;
+    }
+    .icon01 a:first-child{
+        margin-right:16px ;
+    }
+    .icon02 a:first-child{
+        margin-right:16px ;
+    }
+    .header h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: #676767;
+    }
+    
+    /* CIRCLE */
+    .big-circle{
+        width: 140px;
+        height: 140px;
+        border: 4px solid #8df7c1;
+        border-radius: 50%;
+    }
+    .circle-container{          
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 15px 0;
+        
+    }
+    .small-circle{
+        width: 24px;
+        border-radius: 50%;
+        background-color: #ff0036;
+        position: absolute; 
+        font-size: 7px;
+        color: #fff;
+        text-align: center;
+        line-height: 24px;
+        right: 120px;
+        bottom: 16px;
+    }
+    /* TEXT */
+    .text{
+        text-align:center;
+    }
+    .my p:first-child{
+        font-size: 18px;
+        color: #cccccc;
+        margin-bottom: 28px;
+    }
+    .my p:nth-child(2){
+        font-size: 24px;
+        color: #676767;
+        margin-bottom: 10px;
+    }
+    .my p:last-child{
+        font-size: 18px;
+        color: #888888;
+        margin-bottom: 30px;
+    }
+    /* FOLLOW */
+    .follow{
+        display: flex;
+        justify-content:space-between;
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+        margin: 0 54px;
+        margin-bottom: 30px;   
+    }
+    .follow p:nth-child(2)::before, .follow p:nth-child(2)::after{
+        content: '';
+        display: block;
+        clear: both;
+        position: absolute;
+        background-color: #cccccc;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .follow p:nth-child(2)::before{
+        width: 2px;
+        height: 14px;
+        left: 30%;
+    }
+    .follow p:nth-child(2)::after{
+        width: 2px;
+        height: 14px;
+        right: 30%;
+    }
+
+    /* PHOTOS */
+    .photos{
+        height: 180px;
+    }
+    .photos img{
+        width: 87px;
+        height: 87px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        float:left;
+    }
+
+    /* FOOTER */
+    .footer{
+        height: 44px;
+        background-color: #f0f0f0;
+    }
+    .footer .icons{
+        color: #cccccc;
+        font-size: 14px;
+        margin-left: 42px;
+        margin-right: 42px;
+        text-align: center;
+        line-height: 44px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+</style>
+
+</head>
+
+<body>
+    <section class="wrap">
+        <header class="header">
+            <div class="icons icon01">
+                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <h1>Profile</h1>
+            <div class="icons icon02">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-comments"></i></a>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="circle-container">
+                <div class="big-circle">
+                    <img src="./images/photo-main.png" alt="메인이미지">
+                </div>
+                <div class="small-circle">
+                    <p>50%<p>
+                </div>
+            </div>
+            <sectio class="text">
+                <div class="my">
+                    <p>Complate</p>
+                    <p>Hong Gil-dong</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Seoul, joongu</p>
+                </div>
+                <div class="follow">
+                    <p>1,120<br>팔로워</p>
+                    <p>1,567<br>팔로윙</p> 
+                    <p>678<br>사진첩</p>
+                </div>
+                <section class="photos">
+                    <img class="photo1" src="./images/photo1.jpg" alt="이미지1" >
+                    <img class="photo2" src="./images/photo2.jpg" alt="이미지2" >
+                    <img class="photo3" src="./images/photo3.jpg" alt="이미지3" >
+                    <img class="photo4" src="./images/photo4.jpg" alt="이미지4" >
+                    <img class="photo5" src="./images/photo5.jpg" alt="이미지5" >
+                    <img class="photo6" src="./images/photo6.jpg" alt="이미지6" >
+                    <img class="photo7" src="./images/photo7.jpg" alt="이미지7" >
+                    <img class="photo8" src="./images/photo8.jpg" alt="이미지8" >
+                </section>
+            </section>
+            
+            <footer class="footer">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-home"></i></a>
+                    <a href="#"><i class="fas fa-handshake"></i></a>
+                    <a href="#"><i class="fas fa-paper-plane"></i></a>
+                    <a href="#"><i class="fas fa-map-marked-alt"></i></a>
+                </div>
+            </footer>
+                
+        </section>
+        
+    </section>
+</body>
+
+</html>
